@@ -24,5 +24,5 @@ func main() {
 		}
 		nameWithoutVowel+=string(nameChar)
 	}
-	fmt.Println("your name without vowels: ",nameWithoutVowel)
+	fmt.Println("Name without vowels: " ,nameWithoutVowel)
 }
