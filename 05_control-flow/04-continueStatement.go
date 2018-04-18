@@ -20,6 +20,7 @@ func main() {
 			}
 		}
 		if(isVowel){
+			
 			continue
 		}
 		nameWithoutVowel+=string(nameChar)
