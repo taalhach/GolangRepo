@@ -1,4 +1,4 @@
-package main
+package _2_continue_statement
 import (
 	"bufio"
 	"os"
