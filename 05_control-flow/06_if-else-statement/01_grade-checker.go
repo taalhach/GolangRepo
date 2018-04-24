@@ -24,7 +24,7 @@ func main()  {
 	fmt.Println("Grade: D")
 
 	}else if percentage>60 && percentage<=70{
-	fmt.Println("Grade: C")
+	fmt.Println("Grade:  C")
 
 	}else if percentage>70 && percentage<=80 {
 		fmt.Println("Grade: B")
