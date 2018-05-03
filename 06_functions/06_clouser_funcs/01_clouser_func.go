@@ -11,5 +11,5 @@ func main()  {
 		return len(input)
 	}
 	fmt.Print(getCount(input))
-}
+    }
 
