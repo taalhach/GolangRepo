@@ -6,10 +6,10 @@ import "fmt"
 
 func main()  {
 	input:="hey there"
-	getCount:=func () string{
+	getCount:=func (input string) int{
 		input="changed"
-		return input
+		return len(input)
 	}
-	fmt.Print(getCount())
+	fmt.Print(getCount(input))
 }
 
