@@ -1,0 +1,14 @@
+composite type
+enclosing different types in one type
+properties are called fields
+fields with same types can be written in one line
+e.g
+name father_name string
+literals meaning value itself means value of a variable is literal
+x= 3 where x is variable and 3 is literal
+
+
+new allocates memory and zero values to variables of type T
+
+
+embedding ==> using one type in other (super) type or as a field of super type
