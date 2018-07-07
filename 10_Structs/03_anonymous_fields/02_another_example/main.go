@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 type Person struct {
 	Name string
@@ -17,12 +20,20 @@ type Employee struct {
 	EmpID string
 	Appointment int
 }
+func (p Person) BasicInformation() string{
+	return "Name: "+p.Name+" Age: "+strconv.Itoa(p.Age)
+}
 
 
 
 
 
 func main()  {
+	emp:=Employee{
+		Person:Person{Name:"Ahmad ",Age:30},
+		Appointment:2007,
+		EmpID:"DNB-2007-109",
+	}
 	stdA:=Student{
 		Person{Name:"talha",Age:25},
 		"Sp15-BCS-042",
@@ -35,10 +46,10 @@ func main()  {
 		Enrollment:2015,
 
 	}
+	fmt.Println(stdA.BasicInformation())
+	fmt.Println(stdB.BasicInformation())
+	fmt.Println("Employee info")
+	fmt.Println(emp.BasicInformation())
 
-	fmt.Println(stdA.Name,stdA.Age)
-
-	fmt.Println(stdA)
-	fmt.Println(stdB)
 
 }
