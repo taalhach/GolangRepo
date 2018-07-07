@@ -12,3 +12,5 @@ new allocates memory and zero values to variables of type T
 
 
 embedding ==> using one type in other (super) type or as a field of super type
+Json objs encodes golang maps and structs
+converting Golang data structure in Json is marshaling
