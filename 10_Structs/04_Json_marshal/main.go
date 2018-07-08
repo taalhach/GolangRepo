@@ -11,11 +11,13 @@ type Movie struct {
 	Name string
 	Year int `json:"released"`
 	Cast []string `json:"cast,omitempty"`
+	unexported bool
+	// unexported field
 }
 
 var moviesList =[]Movie{
-	{Name:"Mission impossible ", Year:2000,Cast:[]string{"Tom cruise","Tom pegg"}},
-	{Name:"Sicario",Year:2015,},
+	{Name:"Mission impossible ", Year:2000,Cast:[]string{"Tom cruise","Tom pegg"},unexported:false},
+	{Name:"Sicario",Year:2015,unexported:true},
 }
 
 func main()  {
