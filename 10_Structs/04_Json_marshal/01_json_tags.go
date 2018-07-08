@@ -12,6 +12,7 @@ type message struct {
 	Pin int `json:",omitempty"`
 	Status string 	`json:"-"`   //skips this field
 	Slashing string `json:"-,"`  // - is key
+	Pincode float32 `json:",string"`   // marshals as string of json
 }
 var m =message{
 	UserName:"taalhach",
@@ -19,6 +20,7 @@ var m =message{
 	Pin:123,
 	Status:"logged",
 	Slashing:"dash value",
+	Pincode:1.1,
 
 }
 var msg =message{
@@ -27,6 +29,7 @@ var msg =message{
 	Pin:321,
 	Status:" not logged",
 	Slashing:"new value",
+	Pincode:1.1,
 
 }
 func main() {
