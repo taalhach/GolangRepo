@@ -7,13 +7,13 @@ import (
 	"encoding/json"
 )
 
+const url  ="https://jsonplaceholder.typicode.com/posts/1"
 type Message struct {
 	Userid int
 	MsgId int `json:"id"`
 	Title,Body string
 }
 
-const url  ="https://jsonplaceholder.typicode.com/posts/1";
 
 var m =Message{Userid:1}
 func main()  {
