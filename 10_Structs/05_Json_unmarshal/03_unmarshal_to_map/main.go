@@ -1,11 +1,9 @@
 package main
-
 import (
 	"log"
 	"encoding/json"
 	"fmt"
 )
-
 var m =make(map[string]int)
 func marshalMap() []byte {
 	m["taalha"]=0123
@@ -15,14 +13,10 @@ func marshalMap() []byte {
 		log.Fatal("Error in marshaling: ",err)
 	}
 	return mdata
-
 }
-
 var umdata interface{
 }
-
 func main() {
-
 	err:=json.Unmarshal(marshalMap(),&umdata)
 	if err!=nil{
 		log.Fatal("Error in unmarshaling: ",err)
