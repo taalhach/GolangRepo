@@ -11,7 +11,7 @@ type Orderqueue struct {
 	Orders map[int]string
 
 }
-// we can only use int and string as key of map in marshalling otherwise it throws an error 
+// we can only use int and string as key of map in marshalling otherwise it throws an error
 var m =make(map[int]string)
 
 func main()  {
