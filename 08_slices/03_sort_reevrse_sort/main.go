@@ -12,8 +12,13 @@ func main() {
 }
 
 func reverseInts(input []int) []int {
+	sort.Reverse(sort.IntSlice(input))
+
 	if len(input) == 0 {
 		return input
 	}
+
 	return append(reverseInts(input[1:]), input[0])
+	return input
 }
+
