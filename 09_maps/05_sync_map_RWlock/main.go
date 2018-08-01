@@ -30,7 +30,6 @@ func main() {
 }
 func (q *queue)delete()  {
 	fmt.Println(time.Now())
-	time.Sleep(time.Millisecond*2000)
 	fmt.Println("called ",i-1)
 	q.Lock()
 	q.orders=q.orders[:i-1]

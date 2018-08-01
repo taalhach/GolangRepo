@@ -1,0 +1,10 @@
+best article to learn interfaces
+http://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go
+
+
+pointers type can access value type associated funcs but not vice versa
+
+example of above sentence
+error: https://play.golang.org/p/TvR758rfre
+solution: https://play.golang.org/p/x5VwyExxBM
+example: https://play.golang.org/p/UZ618qbPkj
