@@ -22,6 +22,12 @@ func (C CustomerData)	Swap(i,j int)  {
 	 C[i],C[j]=C[j],C[i]
 }
 
+func Reverse(data sort.Interface) {
+	sort.Sort(sort.Reverse(data))
+
+}
+
+
 func main() {
 	c:=CustomerData{
 		{
@@ -36,4 +42,8 @@ func main() {
 	}
 	sort.Sort(c)
 	fmt.Println(c)
+	Reverse(c)
+	fmt.Println(c)
 }
+
+
