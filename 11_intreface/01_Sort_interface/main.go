@@ -40,10 +40,13 @@ func main() {
 			age:16,
 		},
 	}
+	fmt.Println(sort.IsSorted(c))
 	sort.Sort(c)
 	fmt.Println(c)
+	fmt.Println(sort.IsSorted(c))
 	Reverse(c)
 	fmt.Println(c)
+
 }
 
 
