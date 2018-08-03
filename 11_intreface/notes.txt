@@ -7,3 +7,36 @@ example of above sentence
 error: https://play.golang.org/p/TvR758rfre
 solution: https://play.golang.org/p/x5VwyExxBM
 example: https://play.golang.org/p/UZ618qbPkj
+
+
+
+
+
+interface provide some kinds of generics. Think about duck typing.
+
+type Reader interface{
+     Read()
+}
+
+func callRead(r Reader){
+      r.Read()
+}
+
+type A struct{
+}
+func(_ A)Read(){
+}
+
+type B struct{
+}
+func(_ B)Read(){
+}
+It's ok to pass struct A, and B to callRead, because both implement Reader interface. But if without interface, we should write two function for A and B.
+
+func callRead(a A){
+     a.Read()
+}
+
+func callRead2(b B){
+     b.Read()
+}
