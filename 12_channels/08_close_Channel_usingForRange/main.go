@@ -9,7 +9,7 @@ func main()  {
 	ch:=make(chan int)
 	go Producer(ch)
 	go consumer(ch)
-	time.Sleep(time.Millisecond*500)
+	time.Sleep(time.Millisecond*1/10)
 }
 func Producer(ch chan int)  {
 	i:=0
@@ -21,12 +21,7 @@ func Producer(ch chan int)  {
 	fmt.Println("Done")
 }
 func consumer(ch chan int)  {
-	for{
-		 val,ok:=<-ch
-		if !ok{
-			fmt.Println("channel closed and zero value of channel is: ",val)
-			break
-		}
+	for val:=range ch{
 		fmt.Println(val)
 	}
 }
