@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/taalhach/GolangRepo/02_Package_Example/Import_packagge"
+	"github.com/taalhach/01_GolangRepo/02_Package_Example/Import_packagge"
 	"fmt"
 )
 type Customer Import_packagge.Customer
