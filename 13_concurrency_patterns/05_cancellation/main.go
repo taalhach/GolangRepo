@@ -5,6 +5,7 @@ import (
 	"time"
 	"sync"
 )
+
 func Write(wg *sync.WaitGroup)  {
 	time.Sleep(time.Second*5)
 	wg.Done()
