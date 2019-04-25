@@ -77,7 +77,7 @@ func deleteUser(c *websocket.Conn)  {
 	}
 
 }
-//NOTE: writeJson ReadJson WriteMessage WriteJson one type of reader and writer are used  
+//NOTE: writeJson ReadJson WriteMessage WriteJson one type of reader and writer are used
 // writer to connection
 func provider() {
 	// golang channel that generates an event after every 5 seconds
